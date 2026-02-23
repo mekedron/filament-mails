@@ -230,7 +230,7 @@ class MailResource extends Resource
                                                         }
 
                                                         return route('filament.' . $panel->getId() . '.resources.mails.view', [
-                                                            'record' => $record,
+                                                            'record' => $record->mail,
                                                             'tenant' => $tenant->getKey(),
                                                         ]);
                                                     })
